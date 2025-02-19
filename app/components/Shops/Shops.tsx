@@ -12,7 +12,7 @@ function Shops() {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="fw-700 fs-64 mb-30 dark-green-text main-container"
+        className="fw-700 mb-30 dark-green-text main-container"
       >
         {" "}
         МАГАЗИНЫ

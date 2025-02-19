@@ -14,7 +14,7 @@ function PartnerCard({ img, text }) {
       className="partner-card mb-15 fw-400 fs-20"
     >
       <img src={img} />
-      <div>{text}</div>
+      <div className="text_for-partners">{text}</div>
     </motion.div>
   );
 }

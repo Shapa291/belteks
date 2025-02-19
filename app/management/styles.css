@@ -4,11 +4,26 @@
 }
 
 .people-list {
-
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 5px;
 
+}
+
+
+@media only screen and (max-width: 708px) {
+    .people-list {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+    }   
+}
+
+@media only screen and (max-width: 430px) {
+    .people-list {
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+    }   
 }

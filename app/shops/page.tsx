@@ -54,7 +54,7 @@ function Shops() {
           <br /> e-mail: info@belteks.by
         </motion.div>
         <div className="shops-list">
-          <div>
+          <div className="name-of-cities">
             {CitiesData.map((el, index) => (
               <motion.div
                 className={`${index == actvieStyle ? "active" : ""} btn fs-32`}
@@ -68,7 +68,9 @@ function Shops() {
               </motion.div>
             ))}
           </div>
-          <ShopMapBlock cityData={CitiesData[actvieStyle]} />
+          <div>
+            <ShopMapBlock cityData={CitiesData[actvieStyle]} />
+          </div>
         </div>
       </div>
     </div>

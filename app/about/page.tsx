@@ -16,7 +16,7 @@ function AboutPage() {
         <div className="wrapper"></div>
         {/* Навигационна надпись */}
         <NavBread name="О компании" />
-        <div>
+        <div className="about-content">
           <motion.h1
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -59,7 +59,7 @@ function AboutPage() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="dark-green-text fw-700 fs-40 mb-60"
+            className="dark-green-text fw-700 fs-40 mb-40"
           >
             Основные Партнёры
           </motion.h1>

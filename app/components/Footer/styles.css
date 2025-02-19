@@ -1,67 +1,145 @@
 .footer {
+  padding: 30px 20px 40px 20px;
 
+  width: 100%;
+  background-color: #245257;
+  color: #f5f5f5;
+
+  .all-footer-elements {
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .belteleks-logo {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-right: 40px;
     padding-bottom: 40px;
-    padding-top: 30px;
+  }
 
-    width: 100%;
-    background-color: #245257;
-    color: #F5F5F5;
+  .pointer {
+    width: 40%;
+    height: auto;
+    /* object-fit: contain; */
+  }
 
-    .all-footer-elements {
-        display: grid;
-        grid-template-columns: 3fr 10fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 10px;
+  div h1 {
+    font-size: 2vw;
+  }
+
+  .timetable {
+    font-size: 1vw;
+    margin-right: 20px;
+  }
+
+  .email {
+    font-size: 1vw;
+  }
+
+  .footer-columns {
+    display: flex;
+
+    .footer-menu {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+
+      .footer-menu-list {
+        a {
+          color: #f5f5f5;
+          font-size: 1.4vw;
+        }
+      }
+
+      li {
+        margin-bottom: 14px;
+        font-size: 1vw;
+
+        span {
+          cursor: pointer;
+        }
+      }
     }
 
-    .footer-columns {
+    .footer-menu-contacts {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* align-items: center; */
+      margin-left: 3%;
+      font-size: 1.4vw;
+
+      .phonenumber-group {
         display: flex;
+        /* flex-direction: row; */
+        justify-content: space-around;
+        align-items: center;
 
+        margin-bottom: 10px;
 
-        .footer-menu {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr;
-            grid-column-gap: 5px;
-
-            .footer-menu-list {
-                a {
-                    color: #F5F5F5;
-                }
-            }
-
-
-            li {
-                margin-bottom: 5px;
-
-                span {
-                    cursor: pointer;
-                }
-            }
+        .icon {
+          width: 19.5px;
+          height: 18.42px;
         }
 
-        .footer-menu-contacts {
-            margin-left: 3%;
-
-            .phonenumber-group {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-
-                margin-bottom: 10px;
-
-                .icon {
-                    width: 19.5px;
-                    height: 18.42px;
-                }
-
-                a {
-                    color: #F5F5F5;
-                }
-
-            }
-
+        a {
+          color: #f5f5f5;
         }
-
+      }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+
+        div h1 {
+            font-size: 2.6vw;
+        }
+
+        .footer-columns {
+            display: flex;
+        
+            .footer-menu {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-template-rows: 1fr;
+              grid-column-gap: 0px;
+        
+              .footer-menu-list {
+                a {
+                  color: #f5f5f5;
+                  font-size: 2vw;
+                }
+              }
+            }
+        
+          }
+
+        .timetable {
+            font-size: 2vw;
+        }
+
+        .first-number {
+            font-size: 2vw;
+        }
+
+        .second-number {
+            font-size: 2vw;
+        }
+
+        .email {
+            font-size: 2vw;
+        }
+    }
+
 }

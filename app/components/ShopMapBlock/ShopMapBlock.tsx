@@ -9,7 +9,7 @@ function ShopMapBlock(props) {
     animate ={{opacity:1}}
     transition={{duration:2}}
     className="dark-green-text">
-      <div>
+      <div className="whole-body-shops">
         <h1 className="fs-30 fw-700 mb-15">{props.cityData.data.name}</h1>
         <div className="fs-24">
           <div className="mb-10">{props.cityData.data.adress}</div>

@@ -3,8 +3,13 @@
     min-height: 80px;
 }
 
+.main-container .dark-green-text {
+    padding: 16px;
+}
+
 
 .shops-top-text {
+    padding: 34px;
     margin-top: 110px;
     margin-bottom: 41px;
 }
@@ -23,4 +28,35 @@
 }
 .active {
     font-weight: 700;
+}
+
+@media only screen and (max-width: 708px) {
+    .shops-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-of-cities {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .btn {
+        font-size: 3vw;
+        padding: 10px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .shops-top-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-container .dark-green-text {
+        text-align: center;
+    }
 }

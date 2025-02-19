@@ -1,13 +1,15 @@
 .city-in-list {
     cursor: pointer;
-
-    height: 200px;
+    padding: 20px;
+    height: 20vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-top: 1px solid #97ABAB;
+
+    font-size: 2.8vw;
 
     &:last-child {
         border-bottom: 1px solid #97ABAB;
@@ -18,4 +20,9 @@
         color: #F5F5F5;
         background-color: #107778;
     }
+}
+
+.main-container {
+    font-size: 3.5vw;
+    padding: 20px;
 }

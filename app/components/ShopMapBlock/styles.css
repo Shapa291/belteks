@@ -26,5 +26,12 @@
     height: 400px;
     position: relative;
     border: none;
+}
 
+
+@media only screen and (max-width: 708px) {
+    .map-iframe {
+        width: 90%;
+        height: 360px;
+    }
 }

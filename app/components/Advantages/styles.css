@@ -1,8 +1,10 @@
 .advantages-cards {
     display: grid;
+    padding: 0px;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-bottom: 100px;
+    padding: 10px;
 }
 
 .advantage-card {
@@ -39,7 +41,7 @@
 }
 
 /* === Адаптация под 1440px === */
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
     .advantage-card {
         width: 386px;
         height: 293px;
@@ -53,10 +55,10 @@
     .advantage-card img {
         width: 60px; 
     }
-}
+} */
 
 /* === Адаптация под 1024px === */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .advantage-card {
         width: 301px;
         height: 232px;
@@ -70,10 +72,10 @@
     .advantage-card img {
         width: 50px;
     }
-}
+} */
 
 /* === Адаптация под 720px === */
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
     .advantage-card {
         width: 202px;
         height: 143px;
@@ -87,10 +89,10 @@
     .advantage-card img {
         width: 40px;
     }
-}
+} */
 
 /* === Адаптация под 430px === */
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
     .advantages-cards {
         grid-template-columns: 1fr; 
     }
@@ -107,5 +109,37 @@
 
     .advantage-card img {
         width: 50px;
+    }
+} */
+
+
+@media only screen and (max-width: 1241px) {
+    .advantages-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 837px) {
+    .advantages-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .advantages-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .advantage-card img {
+        width: 30%; 
+        height: auto;
+    }
+    
+    /* Текст */
+    .advantage-text {
+        font-size: 5vw;
     }
 }

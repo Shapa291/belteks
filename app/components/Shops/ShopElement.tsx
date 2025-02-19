@@ -10,7 +10,7 @@ function ShopElement({ cityName }) {
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="city-in-list fs-58 fw-600 dark-green-text"
+      className="city-in-list fw-600 dark-green-text"
     >
       <Link href="/shops">
         <div><span className="city">{cityName}</span></div>
