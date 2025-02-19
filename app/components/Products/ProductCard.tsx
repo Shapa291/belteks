@@ -8,15 +8,14 @@ function ProductCard({ text, imgPtah }) {
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       transition={{ duration: 0.5 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       className="product-card fs-30 fw-700"
     >
       <div
         className="product-card-back-image"
         style={{ backgroundImage: `url(${imgPtah})` }}
-      >
-
-      </div>
+      ></div>
       <div className="product-card-text">{text}</div>
     </motion.div>
   );

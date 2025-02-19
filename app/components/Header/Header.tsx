@@ -8,7 +8,6 @@ import ContactsModal from "../ContactsModal/ContactsModal";
 
 function Header() {
   const [contactsOpen, setContactsOpen] = React.useState(false);
-  const [menuOpen, setMenuOpen] = React.useState(false);
 
   return (
     <motion.div

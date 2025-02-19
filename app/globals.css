@@ -18,6 +18,7 @@ a {
 
 html,
 body {
+
   background-color: #F0FCFC;
   font-family: var(--font-geist-montserrat);
   display: flex;

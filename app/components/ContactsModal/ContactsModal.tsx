@@ -6,7 +6,7 @@ import { contactData } from "@/lib/data";
 
 function ContactsModal({ status, setStatus }) {
   return (
-    <div onClick={() => setStatus()} className="modal-wrapper">
+    <div onClick={() => setStatus(!status)} className="modal-wrapper">
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

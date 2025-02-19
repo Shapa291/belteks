@@ -12,6 +12,7 @@ function Products() {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{once:true}}
         className="dark-green-text fs-h1 mb-30"
       >
         ПРОДУКЦИЯ
