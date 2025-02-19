@@ -1,0 +1,26 @@
+.wrapper {
+    position: relative;
+    min-height: 80px;
+}
+
+
+.shops-top-text {
+    margin-top: 110px;
+    margin-bottom: 41px;
+}
+
+.shops-list {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1fr;
+
+}
+
+.btn {
+    cursor: pointer;
+}
+.active {
+    font-weight: 700;
+}

@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 5px 20px;
+
+    background-color: #245257;
+    max-height: 48px;
+    color: #FFFFFF;
+
+    align-items: center;
+
+    .logo {
+        font-family: var(--font-geist-ysabeau);
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .center-btns {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            color: #FFFFFF;
+        }
+
+        .ref-btn {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            li {
+                color: #FFFFFF;
+
+            }
+
+            li:hover {
+                border-bottom: #FFFFFF solid 1px;
+            }
+        }
+    }
+
+    li {
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width:300000px) {
+    .logo {
+        font-size: 36px;
+    }
+
+    .ref-btn {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width:1440px) {
+    .logo {
+        font-size: 36px;
+    }
+
+    .ref-btn {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .logo {
+        font-size: 26px;
+    }
+
+    .ref-btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:720px) {
+    .logo {
+        font-size: 16px;
+    }
+
+    .ref-btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:430px) {
+    .logo {
+        font-size: 11px;
+    }
+
+    .ref-btn {
+        font-size: 7px;
+    }
+}

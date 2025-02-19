@@ -1,0 +1,14 @@
+.wrapper {
+    position: relative;
+    min-height: 80px;
+}
+
+.people-list {
+
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+
+}

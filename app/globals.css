@@ -1,21 +1,249 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Сброс стандартных стилей */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+a {
+  all: unset;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Общие стили */
+
+
+
+html,
+body {
+  background-color: #F0FCFC;
+  font-family: var(--font-geist-montserrat);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Указатель */
+.pointer {
+  cursor: pointer;
+}
+
+/* Контейнер основной части */
+.main-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+
+/* Классы толщины шрифта */
+.fw-1000 {
+  font-weight: 1000;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+/* Классы размера шрифта */
+
+.fs-h1 {
+  font-size: 64px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-54 {
+  font-size: 54px;
+}
+
+.fs-58 {
+  font-size: 58px;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.fs-68 {
+  font-size: 68px;
+}
+
+.fs-120 {
+  font-size: 120px;
+}
+
+.fs-128 {
+  font-size: 128px;
+}
+
+/* Классы отступов */
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-87 {
+  margin-bottom: 87px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* Стилизация скроллбара */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F0FCFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #02444B;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #02444b6f;
+}
+
+/* Цвет текста */
+.dark-green-text {
+  color: #02444B;
+}
+
+@media (max-width: 1440px) {
+  .main-container {
+    width: 100%;
+    max-width: 1180px;
+  }
+
+  .fs-h1 {
+    font-size: 40px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 1240px) {
+  .main-container {
+    width: 100%;
+    max-width: 1080px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    width: 100%;
+    max-width: 904px;
+  }
+
+  .fs-h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main-container {
+    width: 100%;
+    max-width: 634px;
+  }
+
+  .fs-h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main-container {
+    width: 100%;
+    max-width: 328px;
+  }
+
+  .fs-h1 {
+    font-size: 12px;
+  }
 }

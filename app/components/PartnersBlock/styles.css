@@ -1,0 +1,11 @@
+.partner-card {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 15px;
+
+    img {
+      width: 259px;
+      height: 114px;   
+    }
+}
