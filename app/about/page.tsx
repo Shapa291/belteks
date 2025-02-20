@@ -6,8 +6,7 @@ import { motion } from "motion/react";
 import PartnerCard from "../components/PartnersBlock/PartnerCard";
 import NavBread from "../components/NavBread/NavBread";
 import { PartnersData } from "@/lib/data";
-
-
+import { motionConfig } from "@/lib/motionConfig";
 
 function AboutPage() {
   return (
@@ -18,17 +17,13 @@ function AboutPage() {
         <NavBread name="О компании" />
         <div className="about-content">
           <motion.h1
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            {...motionConfig.slideInLeftOnStart}
             className="about-header mb-30 main-container fs-40 fw-700"
           >
             Об организации
           </motion.h1>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            {...motionConfig.fadeInOnStart}
             className="about-text fw-400 fs-24 main-container"
           >
             ОАО «Оптово-логистический центр «БелТекс» является крупнейшим
@@ -55,17 +50,14 @@ function AboutPage() {
         </div>
         <div className="main-container mt-30">
           <motion.h1
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+            {...motionConfig.slideInLeftOnStart}
             className="dark-green-text fw-700 fs-40 mb-40"
           >
             Основные Партнёры
           </motion.h1>
           <div>
             {PartnersData.map((el, index) => (
-              <PartnerCard key={index} img={el.img} text={el.describtion} />
+              <PartnerCard key={index} img={el.img} text={el.describtion} partnerRef = {el.ref} />
             ))}
           </div>
         </div>

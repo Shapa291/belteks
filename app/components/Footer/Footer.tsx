@@ -4,29 +4,20 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { motionConfig } from "@/lib/motionConfig";
+import { footerData } from "@/lib/data";
 
 function Footer() {
   return (
     <div className="footer mt-30">
       <div className="main-container">
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
+        <motion.div {...motionConfig.fadeInUp}>
           <Link className="belteleks-logo" href="/">
             <img className="pointer" src="./imgs/logo.png" />
           </Link>
         </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="footer-columns"
-        >
+
+        <motion.div {...motionConfig.fadeInUp} className="footer-columns">
           <div className="footer-menu">
             <div className="footer-menu-list fs-16 fw-400">
               <h1 className="fs-16 fw-700 mb-15">О КОМПАНИИ</h1>
@@ -48,19 +39,19 @@ function Footer() {
             </div>
             <div className="footer-menu-list">
               <h1 className="fs-16 fw-700 mb-15">ИНФОРМАЦИЯ</h1>
-              <li>
+              {/* <li>
                 <Link href="/news">
                   <span>Акционерам</span>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <a className="pointer" href="https://president.gov.by/ru">
                   Сайт президента Республики Беларусь
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a>Противодействие коррупции</a>
-              </li>
+              </li> */}
               <li>
                 <Link href="/pamyatka-pokupatelyu">
                   <span>Памятка покупателю</span>
@@ -75,31 +66,39 @@ function Footer() {
           </div>
           <div className="footer-menu-contacts">
             <div>
-            <div className="phonenumber-group">
-              <img className="icon" src="./imgs/phone.png" />
-              <a href="tel:+375291234567" className="first-number fs-18 fw-600">
-                +375(29)1234567
-              </a>
+              <div className="phonenumber-group">
+                <img className="icon" src="./imgs/phone.png" />
+                <a
+                  href={`tel:${footerData.numbers.dir}`}
+                  className="first-number fs-18 fw-600"
+                >
+                  {footerData.numbers.dir}
+                </a>
+              </div>
+              <div className="phonenumber-group">
+                <img className="icon" src="./imgs/phone.png" />
+                <a
+                  href={`tel:${footerData.numbers.sales}`}
+                  className="second-number fs-18 fw-600"
+                >
+                  {footerData.numbers.sales}
+                </a>
+              </div>
+              <div className="email fs-14 fw-600">
+                Email: {footerData.email}
+              </div>
             </div>
-            <div className="phonenumber-group">
-              <img className="icon" src="./imgs/phone.png" />
-              <a href="tel:+375291234567" className="second-number fs-18 fw-600">
-                +375(29)1234567
-              </a>
+            <div className="phonenumber-group"></div>
+            <div className="timetable fw-400">
+              <div className="mb-10">{footerData.timeOfWork.fullDay}</div>
+              <div className="mb-10">{footerData.timeOfWork.shortDay}</div>
+              <div className="mb-10">{footerData.timeOfWork.dayOff}</div>
             </div>
-            <div className="email fs-14 fw-600">Email: info@belteks.by</div>
-            </div>
-            <div className="phonenumber-group">
-              
-            </div>
-            <div className="timetable fw-400">С 8:45 до 17:30 по будням</div>
           </div>
         </motion.div>
       </div>
 
-      <div>
-
-      </div>
+      <div></div>
     </div>
   );
 }

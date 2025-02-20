@@ -46,15 +46,21 @@ export const peopleContacts = [
   },
   {
     job: "Главный инженер",
-    name: "Анисимович Василий Григорьевич",
+    name: "Холодняк Александр Юрьевич",
     phoneNumber: "+375 (17) 270-32-01",
-    email: "info@belteks.by",
+    email: "sbyt@belteks.by",
   },
   {
     job: "Отдел кадров",
     name: "Шкадаревич Ирина Ивановна",
-    phoneNumber: "+375 (29) 222-22-33",
-    email: "jur@belteks.by",
+    phoneNumber: "+375 (17) 343-99-93",
+    email: "jurist@belteks.by",
+  },
+  {
+    job: "Юридический отдел",
+    name: "Телеш Екатерина Анатольевна",
+    phoneNumber: "+375 (17) 343-99-93",
+    email: "jurist@belteks.by",
   },
   {
     job: "Технический отдел",
@@ -75,47 +81,47 @@ export const ShopsData = [
 
 export const ProductsData = [
   { img: "./imgs/ProductsIMG/1.png", name: "ПОСТЕЛЬНОЕ БЕЛЬЕ" },
-  { img: "./imgs/ProductsIMG/1.png", name: "ТКАНИ" },
-  { img: "./imgs/ProductsIMG/1.png", name: "ОДЕЯЛА, ПЛЕДЫ, ПОДУШКИ" },
-  { img: "./imgs/ProductsIMG/1.png", name: "МАХРОВЫЕ ИЗДЕЛИЯ" },
-  { img: "./imgs/ProductsIMG/1.png", name: "СОПУТСВТУЮЩИЕ ТОВАРЫ" },
+  { img: "./imgs/ProductsIMG/4.png", name: "ТКАНИ" },
+  { img: "./imgs/ProductsIMG/5.png", name: "ОДЕЯЛА, ПЛЕДЫ, ПОДУШКИ" },
+  { img: "./imgs/ProductsIMG/2.png", name: "МАХРОВЫЕ ИЗДЕЛИЯ" },
+  { img: "./imgs/ProductsIMG/3.png", name: "СОПУТСВТУЮЩИЕ ТОВАРЫ" },
 ];
 
 export const contactData = [
   {
     name: "ОАО  «ОЛЦ БелТекс»",
     addres: "220005, г. Минск, ул. Платонова 32",
-    number: "+375171234567",
-    email: "infto@belteks.by",
+    number: "+375 (17) 270-25-53",
+    email: "info@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БЕЛ ТЕКС» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №2",
+    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №2",
     addres: "210516, г. Витебск, ул. Лазо 117",
-    number: "+375 (17) 111-22-33",
+    number: "+375 (212) 23-42-30",
     email: "vitebsk@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БЕЛ ТЕКС» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №3»",
+    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №3»",
     addres: "246007, г. Гомель, ул. Шилова 12",
-    number: "+375 (17) 123-45-67",
+    number: "+375 (232) 34-60-16",
     email: "gomel@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БЕЛ ТЕКС» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №4»",
-    addres: "212001, г. Могилев, пер. Мечникова 4-й 15/1Б",
-    number: "+375 (17) 123-45-67",
+    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №4»",
+    addres: "212008, г. Могилев, пер. Мечникова 4-й 15/1Б",
+    number: "+375 (222) 73-53-45",
     email: "mogilev@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БЕЛ ТЕКС» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №5",
+    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №5",
     addres: "224701, г. Брест, ул. Фомина, 15а",
-    number: "+375 (17) 123-45-67",
+    number: "+375 (16) 223-73-85",
     email: "brest@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БЕЛ ТЕКС» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №6",
+    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №6",
     addres: "230005, г. Гродно, ул.Дзержинского, 94а",
-    number: "+375 (17) 123-45-67",
+    number: "+375 (152) 55-42-04",
     email: "grodno@belteks.by",
   },
 ];
@@ -142,7 +148,7 @@ export const AboutBlockData = [
   { year: ">85", text: "Лет на рынке" },
   { year: ">1500", text: "Постоянных клиентов" },
   { year: "6", text: "Представительств в каждом регионе" },
-  { year: "95%", text: "Тонн продукции отгружается ежегодно" },
+  { year: "90%", text: "Текстиля — из экологически чистого сырья" },
 ];
 
 export const AboutBlockData1 = [
@@ -152,16 +158,17 @@ export const AboutBlockData1 = [
   { year: "1200 ", text: "различных артикулов в каталоге продукции" },
 ];
 
-
-
 export const CitiesData = [
   {
     city: "Минск",
     data: {
-      name: "ОАО ОЛЦ БЕЛ ТЕКС",
+      name: "ОАО «ОЛЦ БелТекс»",
       adress: "220005, г. Минск, ул. Платонова 32",
-      phoneNumber: "+375 (17)270-32-54 факс: +375 (17)270-20-44",
-      email: "infro@belteks.by",
+      phoneNumber: {
+        dir: "+375 (17) 270-25-53",
+        sales: "+375 (25) 500-29-45",
+      },
+      email: "info@belteks.by",
       mapLinks: {
         cityLink:
           "https://yandex.by/maps/org/belteks/1305735844/?utm_medium=mapframe&utm_source=maps",
@@ -177,9 +184,12 @@ export const CitiesData = [
   {
     city: "Брест",
     data: {
-      name: "ОАО ОЛЦ БЕЛ ТЕКС",
-      adress: "220005, г. Брест, ул. Платонова 32",
-      phoneNumber: "+375 (17)270-32-54 факс: +375 (17)270-20-44",
+      name: "ОАО «ОЛЦ БелТекс» Оптово Розничный Склад №5",
+      adress: "224701, г. Брест, ул. Фомина, 15а",
+      phoneNumber: {
+        dir: "",
+        sales: "",
+      },
       email: "infro@belteks.by",
       mapLinks: {
         cityLink:
@@ -196,7 +206,10 @@ export const CitiesData = [
     data: {
       name: "ОАО ОЛЦ БЕЛ ТЕКС",
       adress: "220005, г. Витебск, ул. Платонова 32",
-      phoneNumber: "+375 (17)270-32-54 факс: +375 (17)270-20-44",
+      phoneNumber: {
+        dir: "",
+        sales: "",
+      },
       email: "infro@belteks.by",
       mapLinks: {
         cityLink:
@@ -215,7 +228,10 @@ export const CitiesData = [
     data: {
       name: "ОАО ОЛЦ БЕЛ ТЕКС",
       adress: "220005, г. Гомель, ул. Платонова 32",
-      phoneNumber: "+375 (17)270-32-54 факс: +375 (17)270-20-44",
+      phoneNumber: {
+        dir: "",
+        sales: "",
+      },
       email: "infro@belteks.by",
       mapLinks: {
         cityLink:
@@ -234,7 +250,10 @@ export const CitiesData = [
     data: {
       name: "ОАО ОЛЦ БЕЛ ТЕКС",
       adress: "220005, г. Гродно, ул. Платонова 32",
-      phoneNumber: "+375 (17)270-32-54 факс: +375 (17)270-20-44",
+      phoneNumber: {
+        dir: "",
+        sales: "",
+      },
       email: "infro@belteks.by",
       mapLinks: {
         cityLink:
@@ -251,7 +270,10 @@ export const CitiesData = [
     data: {
       name: "ОАО ОЛЦ БЕЛ ТЕКС",
       adress: "220005, г. Могилев, ул. Платонова 32",
-      phoneNumber: "+375 (17)270-32-54 факс: +375 (17)270-20-44",
+      phoneNumber: {
+        dir: "",
+        sales: "",
+      },
       email: "infro@belteks.by",
       mapLinks: {
         cityLink:
@@ -272,17 +294,33 @@ export const PartnersData = [
     img: "./imgs/Partners/pole_kvetak.png",
     describtion:
       "РУПТП «ОРШАНСКИЙ ЛЬНОКОМБИНАТ»- Льняные и полульняные ткани: для столового и постельного белья, сорочечно-блузочные  и костюмно-платьевые, бортовые, портьерные, декоративные, мебельные, ткань для живописи, мешочные и упаковочные, продукция домашнего текстиля: скатерти, салфетки, полотенца, наборы полотенец, комплекты столового и постельного белья. На предприятии внедрена система менеджмента качества по ИСО 9001-2000. Предприятие является лауреатом Премии Правительства Республики Беларусь в области качества.",
+    ref: "https://linenmill.by/",
   },
 
   {
     img: "./imgs/Partners/BPHO.png",
     describtion:
       "ОАО «БПХО» — крупнейший производитель текстиля в Республике Беларусь. Высокий уровень качества подтвержден сертификатом соответствия требованиям международных стандартов ИСО 9000-2000. Предприятие является победителем конкурса «Лучшие товары Республики Беларусь» в 2005 г.",
+    ref: "https://bpho.by/",
   },
 
   {
     img: "./imgs/Partners/rechitca.png",
     describtion:
       "ОАО «Речицкий текстиль» — ведущий белорусский производитель домашнего текстиля. Ассортимент включает махровые и вафельные полотенца, халаты, покрывала, пледы, мебельные и декоративные ткани, столовое и постельное белье. Основанное в 1927 году, предприятие выросло из артели в крупного производителя, востребованного в Беларуси и за её пределами. Продукция соответствует высоким стандартам качества и востребована в гостиничном и ресторанном бизнесе, санаториях и торговых сетях.",
+    ref: "https://textil.by/",
   },
 ];
+
+export const footerData = {
+  email: "commerce@belteks.by",
+  numbers: {
+    sales: "+375 (17) 1234567",
+    dir: "+375 (17) 1234567",
+  },
+  timeOfWork: {
+    fullDay: "С 8:45 до 17:30 по будням",
+    shortDay: "С 8:45 до 16:15 по пятницам",
+    dayOff: "Сб, вс выходные",
+  },
+};

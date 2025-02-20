@@ -5,28 +5,19 @@ import "./styles.css";
 import FactCard from "./FactCard";
 import { motion } from "motion/react";
 import { AboutBlockData } from "@/lib/data";
+import { motionConfig } from "@/lib/motionConfig";
 
 const AboutBlock = () => {
   return (
     <div className="about-block">
       <div className="main-container about-block-grid">
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="brand-name"
-        >
+        <motion.div {...motionConfig.fadeInUp} className="brand-name">
           <span className="fw-800">О БЕЛ</span>ТЕКС
         </motion.div>
         <div>
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="description mb-15"
-          >
+          <motion.div {...motionConfig.fadeInUp} className="description mb-15">
             ОАО «Оптово-логистический центр «БелТекс» является крупнейшим
-            поставщиком  ведущих белорусских производителей легкой и текстильной
+            поставщиком ведущих белорусских производителей легкой и текстильной
             промышленности для оптовой и розничной торговли.
           </motion.div>
           <div className="fact-cards">

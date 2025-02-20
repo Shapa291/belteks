@@ -1,19 +1,29 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
+import { motionConfig } from "@/lib/motionConfig";
 
 function ShopMapBlock(props) {
   return (
-    <motion.div
-    initial ={{opacity:0}}
-    animate ={{opacity:1}}
-    transition={{duration:2}}
-    className="dark-green-text">
+    <motion.div {...motionConfig.fadeIn} className="dark-green-text">
       <div className="whole-body-shops">
         <h1 className="fs-30 fw-700 mb-15">{props.cityData.data.name}</h1>
         <div className="fs-24">
           <div className="mb-10">{props.cityData.data.adress}</div>
-          <div  className="mb-10">{props.cityData.data.phoneNumber}</div>
+          <div className="mb-10">
+            <div>
+              Приемная:
+              <a href={`tel:${props.cityData.data.phoneNumber.dir}`}>
+                {props.cityData.data.phoneNumber.dir}
+              </a>
+            </div>
+            <div>
+              Торговый отдел:{" "}
+              <a href={`tel:${props.cityData.data.phoneNumber.sales}`}>
+                {props.cityData.data.phoneNumber.sales}
+              </a>
+            </div>
+          </div>
           <div className="mb-10">{props.cityData.data.email}</div>
         </div>
         <div className="map-container">

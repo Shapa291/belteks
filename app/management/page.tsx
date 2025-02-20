@@ -2,8 +2,7 @@
 
 import React from "react";
 import "./styles.css";
-import { motion } from "motion/react";
-import Link from "next/link";
+
 import HumanCard from "../components/HumanCard/HumanCard";
 import { peopleContacts } from "@/lib/data";
 import NavBread from "../components/NavBread/NavBread";

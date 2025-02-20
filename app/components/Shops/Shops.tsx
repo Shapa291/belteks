@@ -5,16 +5,15 @@ import "./styles.css";
 import ShopElement from "./ShopElement";
 import { motion } from "motion/react";
 import { ShopsData } from "@/lib/data";
+import { motionConfig } from "@/lib/motionConfig";
 
 function Shops() {
   return (
     <div>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        {...motionConfig.fadeInUp}
         className="fw-700 mb-30 dark-green-text main-container"
       >
-        {" "}
         МАГАЗИНЫ
       </motion.div>
       <div className="cities-list">

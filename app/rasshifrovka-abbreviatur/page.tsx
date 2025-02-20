@@ -4,6 +4,8 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import Link from "next/link";
+import NavBread from "../components/NavBread/NavBread";
+import { motionConfig } from "@/lib/motionConfig";
 
 function RasshifrovkaAbbreviatur() {
   return (
@@ -11,23 +13,10 @@ function RasshifrovkaAbbreviatur() {
       <div className="wrapper"></div>
       <div className="main-container">
         {/* Навигационная надпись */}
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="fw-400 fs-16 dark-green-text"
-        >
-          <Link className="dark-green-text" href="\">
-            Главная
-          </Link>
-          / <span className="fw-700">Расшифровка абревиатур</span>
-        </motion.div>
+        <NavBread name="Расшифровка абревиатур" />
 
         <div className="mt-30">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
+          <motion.div {...motionConfig.slideInLeft}>
             <h1 className="fw-700 fs-40 mb-15">
               Буквенные обозначения отделок бытовых тканей:
             </h1>
@@ -76,11 +65,7 @@ function RasshifrovkaAbbreviatur() {
               <br />
             </div>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
+          <motion.div {...motionConfig.slideInLeft}>
             <h1 className="fw-700 fs-40 mb-15">
               Буквенные обозначения упаковок в готовых изделиях:
             </h1>

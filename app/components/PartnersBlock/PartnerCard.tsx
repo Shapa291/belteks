@@ -3,17 +3,17 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
+import { motionConfig } from "@/lib/motionConfig";
 
-function PartnerCard({ img, text }) {
+function PartnerCard({ img, text, partnerRef }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
+      {...motionConfig.fadeInUp}
       className="partner-card mb-15 fw-400 fs-20"
     >
-      <img src={img} />
+      <a className="pointer" href={partnerRef}>
+        <img src={img} />
+      </a>
       <div className="text_for-partners">{text}</div>
     </motion.div>
   );

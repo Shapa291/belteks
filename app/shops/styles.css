@@ -7,7 +7,6 @@
     padding: 16px;
 }
 
-
 .shops-top-text {
     padding: 34px;
     margin-top: 110px;
@@ -31,6 +30,7 @@
 }
 
 @media only screen and (max-width: 708px) {
+
     .shops-list {
         display: flex;
         flex-direction: column;

@@ -4,17 +4,19 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { motionConfig } from "@/lib/motionConfig";
 
 function ShopElement({ cityName }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      {...motionConfig.fadeInUp}
       className="city-in-list fw-600 dark-green-text"
     >
       <Link href="/shops">
-        <div><span className="city">{cityName}</span></div>
-        </Link>
+        <div>
+          <span className="city">{cityName}</span>
+        </div>
+      </Link>
     </motion.div>
   );
 }

@@ -6,6 +6,7 @@ import "./styles.css";
 import Link from "next/link";
 import { motion } from "motion/react";
 import NavBread from "../components/NavBread/NavBread";
+import { motionConfig } from "@/lib/motionConfig";
 
 function PamyatkPokupatelyu() {
   return (
@@ -16,25 +17,19 @@ function PamyatkPokupatelyu() {
         <NavBread name='Памятка покупателю'/>
         <div className="dark-green-text text-pamyatka mt-30">
           <motion.h1
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.65 }}
+            {...motionConfig.slideInWithStep(0)}
             className="mb-10 fw-700 fs-40"
           >
             ПАМЯТКА ПОКУПАТЕЛЮ
           </motion.h1>
           <motion.h1
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            {...motionConfig.slideInWithStep(0.2)}
             className="mb-10 fw-700 fs-40"
           >
             ПО УХОДУ ЗА ШВЕЙНЫМИ ИЗДЕЛИЯМИ
           </motion.h1>
           <motion.h1
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.95 }}
+            {...motionConfig.slideInWithStep(0.4)}
             className="mb-15 fw-700 fs-40"
           >
             ИЗ ЧИСТОЛЬНЯНЫХ И ПОЛУЛЬНЯНЫХ ТКАНЕЙ
@@ -42,9 +37,7 @@ function PamyatkPokupatelyu() {
 
           <div className="fs-24">
             <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              {...motionConfig.fadeIn}
             >
               Уважаемый покупатель!
               <br />
@@ -128,10 +121,7 @@ function PamyatkPokupatelyu() {
             </motion.p>
             <br />
             <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              viewport={{ once: true }}
+              {...motionConfig.fadeIn}
             >
               <div className="fw-700 fs-30">
                 <i>
@@ -162,10 +152,7 @@ function PamyatkPokupatelyu() {
             </motion.p>
             <br />
             <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              viewport={{ once: true }}
+              {...motionConfig.fadeIn}
             >
               <div>
                 <b>При несоблюдении наших рекомендаций, а также при:</b>
@@ -208,10 +195,7 @@ function PamyatkPokupatelyu() {
             <br />
 
             <motion.h1
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              viewport={{ once: true }}
+              {...motionConfig.fadeIn}
               className="mt-30 mb-15 fw-700 fs-40"
             >
               Бактерицидные, антигрибковые и гипоаллергенные свойства льняной
@@ -219,10 +203,7 @@ function PamyatkPokupatelyu() {
             </motion.h1>
             <div>
               <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                {...motionConfig.fadeIn}
               >
                 Искусство прядения нитей из льна известно не одну тысячу лет, и
                 до сих пор льняные ткани не теряют своей актуальности в быту,
@@ -250,10 +231,7 @@ function PamyatkPokupatelyu() {
               <br />
               <br />
               <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                {...motionConfig.fadeIn}
               >
                 Неокрашенные льняные ткани гипоаллергенны. Известны случаи
                 аллергии на синтетические ткани, шерсть, шелк, а на лен ― не
@@ -289,20 +267,14 @@ function PamyatkPokupatelyu() {
             <br />
             <br />
             <motion.h1
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              viewport={{ once: true }}
+              {...motionConfig.fadeIn}
               className="mt-30 mb-15 fw-700 fs-40"
             >
               Как использовать полезные свойства льна по максимуму?
             </motion.h1>
             <div className="mb-30">
               <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                {...motionConfig.fadeIn}
               >
                 Носить льняную одежду. В летнюю жару льняные платья и рубашки ―
                 настоящая находка. Лен хорошо отводит влагу и тепло, поэтому по
@@ -323,10 +295,7 @@ function PamyatkPokupatelyu() {
                 <br />
               </motion.p>
               <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                {...motionConfig.fadeIn}
               >
                 Вешать льняные занавески. Помимо экологической чистоты интерьера
                 занавески из небеленого льна помогут создать в доме стильный

@@ -3,15 +3,11 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
+import { motionConfig } from "@/lib/motionConfig";
 
 function AdvantageCard({ icon, text }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="advantage-card"
-    >
+    <motion.div {...motionConfig.fadeInUp} className="advantage-card">
       <div className="content">
         <div className="advantage-icon">
           <img src={icon} />
