@@ -11,20 +11,20 @@ import { motionConfig } from "@/lib/motionConfig";
 function AboutPage() {
   return (
     <div>
-      <div className="dark-green-text main-container">
+      <div className="dark-green-text main-container about-page">
         <div className="wrapper"></div>
         {/* Навигационна надпись */}
         <NavBread name="О компании" />
         <div className="about-content">
           <motion.h1
             {...motionConfig.slideInLeftOnStart}
-            className="about-header mb-30 main-container fs-40 fw-700"
+            className="about-header mb-30 main-container fs-h1 fw-700"
           >
             Об организации
           </motion.h1>
           <motion.div
             {...motionConfig.fadeInOnStart}
-            className="about-text fw-400 fs-24 main-container"
+            className="about-text fw-400 fs-text main-container"
           >
             ОАО «Оптово-логистический центр «БелТекс» является крупнейшим
             дилером по оптовой торговле тканями и текстильными изделиями.
@@ -51,13 +51,18 @@ function AboutPage() {
         <div className="main-container mt-30">
           <motion.h1
             {...motionConfig.slideInLeftOnStart}
-            className="dark-green-text fw-700 fs-40 mb-40"
+            className="dark-green-text fw-700 fs-h1 mb-40"
           >
             Основные Партнёры
           </motion.h1>
           <div>
             {PartnersData.map((el, index) => (
-              <PartnerCard key={index} img={el.img} text={el.describtion} partnerRef = {el.ref} />
+              <PartnerCard
+                key={index}
+                img={el.img}
+                text={el.describtion}
+                partnerRef={el.ref}
+              />
             ))}
           </div>
         </div>

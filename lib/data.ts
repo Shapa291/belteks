@@ -1,3 +1,26 @@
+export interface CityData {
+  city: string;
+  data: {
+    name: string;
+    adress: string;
+    phoneNumber: {
+      dir: string;
+      sales: string;
+    };
+    email: string;
+    mapLinks: {
+      cityLink: string;
+      textileCompanyLink?: string | undefined;
+      fabricStoreLink?: string | undefined;
+      wholesaleStoreLink?: string | undefined;
+      wholesaleCompanyLink?: string | undefined;
+      beddingStoreLink?: string | undefined;
+      addressLink?: string | undefined;
+      iframeSrc: string;
+    };
+  };
+}
+
 export const articlesData = [
   {
     date: "16.08.2024",
@@ -158,7 +181,7 @@ export const AboutBlockData1 = [
   { year: "1200 ", text: "различных артикулов в каталоге продукции" },
 ];
 
-export const CitiesData = [
+export const CitiesData: CityData[] = [
   {
     city: "Минск",
     data: {
@@ -187,10 +210,10 @@ export const CitiesData = [
       name: "ОАО «ОЛЦ БелТекс» Оптово Розничный Склад №5",
       adress: "224701, г. Брест, ул. Фомина, 15а",
       phoneNumber: {
-        dir: "",
+        dir: "+375 (16) 223-73-85",
         sales: "",
       },
-      email: "infro@belteks.by",
+      email: "brest@belteks.by",
       mapLinks: {
         cityLink:
           "https://yandex.by/maps/org/belteks/1193749630/?utm_medium=mapframe&utm_source=maps",
@@ -204,13 +227,13 @@ export const CitiesData = [
   {
     city: "Витебск",
     data: {
-      name: "ОАО ОЛЦ БЕЛ ТЕКС",
-      adress: "220005, г. Витебск, ул. Платонова 32",
+      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №2",
+      adress: "210516, г. Витебск, ул. Лазо 117",
       phoneNumber: {
-        dir: "",
+        dir: "+375 (212) 23-42-30",
         sales: "",
       },
-      email: "infro@belteks.by",
+      email: "vitebsk@belteks.by",
       mapLinks: {
         cityLink:
           "https://yandex.by/maps/org/optovo_logisticheskiy_tsentr_belteks/194569085276/?utm_medium=mapframe&utm_source=maps",
@@ -226,13 +249,13 @@ export const CitiesData = [
   {
     city: "Гомель",
     data: {
-      name: "ОАО ОЛЦ БЕЛ ТЕКС",
-      adress: "220005, г. Гомель, ул. Платонова 32",
+      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №3»",
+      adress: "246007, г. Гомель, ул. Шилова 12",
       phoneNumber: {
-        dir: "",
+        dir: "+375 (232) 34-60-16",
         sales: "",
       },
-      email: "infro@belteks.by",
+      email: "gomel@belteks.by",
       mapLinks: {
         cityLink:
           "https://yandex.by/maps/org/belteks/58370618697/?utm_medium=mapframe&utm_source=maps",
@@ -248,13 +271,13 @@ export const CitiesData = [
   {
     city: "Гродно",
     data: {
-      name: "ОАО ОЛЦ БЕЛ ТЕКС",
-      adress: "220005, г. Гродно, ул. Платонова 32",
+      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №6",
+      adress: "230005, г. Гродно, ул.Дзержинского, 94а",
       phoneNumber: {
-        dir: "",
+        dir: "+375 (152) 55-42-04",
         sales: "",
       },
-      email: "infro@belteks.by",
+      email: "grodno@belteks.by",
       mapLinks: {
         cityLink:
           "https://yandex.by/maps/10274/grodno/?utm_medium=mapframe&utm_source=maps",
@@ -268,13 +291,13 @@ export const CitiesData = [
   {
     city: "Могилев",
     data: {
-      name: "ОАО ОЛЦ БЕЛ ТЕКС",
-      adress: "220005, г. Могилев, ул. Платонова 32",
+      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №4",
+      adress: "212008, г. Могилев, пер. Мечникова 4-й 15/1Б",
       phoneNumber: {
-        dir: "",
+        dir: "+375 (222) 73-53-45",
         sales: "",
       },
-      email: "infro@belteks.by",
+      email: "mogilev@belteks.by",
       mapLinks: {
         cityLink:
           "https://yandex.by/maps/org/belteks/1001988094/?utm_medium=mapframe&utm_source=maps",

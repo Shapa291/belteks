@@ -3,7 +3,15 @@ import "./styles.css";
 import { motion } from "motion/react";
 import { motionConfig } from "@/lib/motionConfig";
 
-function ShopContact({ index, name, addres, number, email }) {
+interface ShopContactProps {
+  index: number;
+  name: string;
+  addres: string;
+  number: string;
+  email: string;
+}
+
+function ShopContact({ index, name, addres, number, email }: ShopContactProps) {
   return (
     <motion.div
       {...motionConfig.slideInLeftWithDelay(index)}

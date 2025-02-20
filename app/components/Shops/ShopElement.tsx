@@ -6,7 +6,11 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { motionConfig } from "@/lib/motionConfig";
 
-function ShopElement({ cityName }) {
+interface ShopElementProps {
+  cityName: string;
+}
+
+function ShopElement({ cityName }: ShopElementProps) {
   return (
     <motion.div
       {...motionConfig.fadeInUp}

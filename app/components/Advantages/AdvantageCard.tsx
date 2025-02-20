@@ -5,7 +5,12 @@ import "./styles.css";
 import { motion } from "motion/react";
 import { motionConfig } from "@/lib/motionConfig";
 
-function AdvantageCard({ icon, text }) {
+interface AdvantageCardProps {
+  icon: string;
+  text: string;
+}
+
+function AdvantageCard({ icon, text }: AdvantageCardProps) {
   return (
     <motion.div {...motionConfig.fadeInUp} className="advantage-card">
       <div className="content">

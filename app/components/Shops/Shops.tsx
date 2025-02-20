@@ -12,7 +12,7 @@ function Shops() {
     <div>
       <motion.div
         {...motionConfig.fadeInUp}
-        className="fw-700 mb-30 dark-green-text main-container"
+        className="fw-700 mb-30 dark-green-text fs-h1 main-container"
       >
         МАГАЗИНЫ
       </motion.div>

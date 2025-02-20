@@ -5,7 +5,13 @@ import "./styles.css";
 import { motion } from "motion/react";
 import { motionConfig } from "@/lib/motionConfig";
 
-function PartnerCard({ img, text, partnerRef }) {
+interface PartnerCardProps {
+  img: string;
+  text: string;
+  partnerRef: string;
+}
+
+function PartnerCard({ img, text, partnerRef }: PartnerCardProps) {
   return (
     <motion.div
       {...motionConfig.fadeInUp}

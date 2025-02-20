@@ -18,9 +18,9 @@ function Footer() {
         </motion.div>
 
         <motion.div {...motionConfig.fadeInUp} className="footer-columns">
-          <div className="footer-menu">
-            <div className="footer-menu-list fs-16 fw-400">
-              <h1 className="fs-16 fw-700 mb-15">О КОМПАНИИ</h1>
+          <div className="footer-menu fs-for-footer-li-element">
+            <div className="footer-menu-list fw-400">
+              <h1 className=" fw-700 fs-for-footer-li-element mb-15">О КОМПАНИИ</h1>
               <li>
                 <Link href="/about">
                   <span>О нас</span>
@@ -38,7 +38,7 @@ function Footer() {
               </li>
             </div>
             <div className="footer-menu-list">
-              <h1 className="fs-16 fw-700 mb-15">ИНФОРМАЦИЯ</h1>
+              <h1 className="fs-for-footer-li-element  fw-700 mb-15">ИНФОРМАЦИЯ</h1>
               {/* <li>
                 <Link href="/news">
                   <span>Акционерам</span>
@@ -70,7 +70,7 @@ function Footer() {
                 <img className="icon" src="./imgs/phone.png" />
                 <a
                   href={`tel:${footerData.numbers.dir}`}
-                  className="first-number fs-18 fw-600"
+                  className="first-number fs-for-footer-li-phone fw-600"
                 >
                   {footerData.numbers.dir}
                 </a>
@@ -79,17 +79,17 @@ function Footer() {
                 <img className="icon" src="./imgs/phone.png" />
                 <a
                   href={`tel:${footerData.numbers.sales}`}
-                  className="second-number fs-18 fw-600"
+                  className="second-number fs-for-footer-li-phone fw-600"
                 >
                   {footerData.numbers.sales}
                 </a>
               </div>
-              <div className="email fs-14 fw-600">
+              <div className="email fs-for-footer-li-email fw-600">
                 Email: {footerData.email}
               </div>
             </div>
             <div className="phonenumber-group"></div>
-            <div className="timetable fw-400">
+            <div className="fs-for-footer-li-element  fw-400">
               <div className="mb-10">{footerData.timeOfWork.fullDay}</div>
               <div className="mb-10">{footerData.timeOfWork.shortDay}</div>
               <div className="mb-10">{footerData.timeOfWork.dayOff}</div>

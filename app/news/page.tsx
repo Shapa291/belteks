@@ -3,9 +3,7 @@
 import React from "react";
 import "./styles.css";
 
-import Link from "next/link";
 import { motion } from "motion/react";
-import { articlesData } from "@/lib/data";
 import NavBread from "../components/NavBread/NavBread";
 
 function News() {
@@ -14,7 +12,7 @@ function News() {
       <div className="main-container ">
         {/* Навигационная надпись */}
         <div className="wrapper"></div>
-        <NavBread name='Акционерам'/>
+        <NavBread name="Акционерам" />
         {/*Блок с новостями и ссылками*/}
 
         <div className="articles mt-30">
@@ -67,11 +65,11 @@ function News() {
           </motion.div>
         </div>
         <div className="articles mt-30">
-          {articlesData.map((el, index) => (
+          {/* {articlesData.map((el, index) => (
             <Link key={index} href={`news/${index}`}>
               {el.date} <br />
             </Link>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

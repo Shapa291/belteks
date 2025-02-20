@@ -9,12 +9,12 @@
 
 .shops-top-text {
     padding: 34px;
-    margin-top: 110px;
+    margin-top: 30px;
     margin-bottom: 41px;
 }
 
 .shops-list {
-    margin-top: 70px;
+    margin-top: 40px;
 
     display: grid;
     grid-template-columns: 3fr 9fr;

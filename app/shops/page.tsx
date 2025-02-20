@@ -8,19 +8,19 @@ import ShopMapBlock from "../components/ShopMapBlock/ShopMapBlock";
 import { CitiesData } from "@/lib/data";
 
 function Shops() {
-  const [actvieStyle, setActiveStyle] = React.useState(0);
+  const [actvieStyle, setActiveStyle] = React.useState<number>(0);
 
   React.useEffect(() => {}, [actvieStyle]);
 
   return (
     <div className="main-container dark-green-text">
       <div className="wrapper"></div>
-      <NavBread name="Решиональные склады" />
+      <NavBread name="Региональные склады" />
       <div className="shops-top-text">
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          className="fs-32 fw-700 mb-30"
+          className="fs-h1-name fw-700 mb-30"
         >
           Наши реквизиты
         </motion.h1>
@@ -28,11 +28,11 @@ function Shops() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="fs-24"
+          className="fs-text"
         >
           <span className="fw-700">
             ОАО «Оптово-логистический центр «БелТекс»
-          </span>{" "}
+          </span>
           <br /> 220005, г. Минск, ул. Платонова, 32
           <br />
           <br />
@@ -43,14 +43,14 @@ function Shops() {
           В лице директора Платоновой Варвары Ивановны, действует на основании
           Устава
           <br /> <br />
-          Тел./факс:{" "}
+          Тел./факс:
           <a className="pointer" href="tel:+375172702553">
             +375 (17) 270-25-53
-          </a>{" "}
-          /{" "}
+          </a>
+          /
           <a className="pointer" href="tel:+375172702394">
             +375 (17) 270-23-94
-          </a>{" "}
+          </a>
           <br /> e-mail: info@belteks.by
         </motion.div>
         <div className="shops-list">
@@ -69,7 +69,7 @@ function Shops() {
             ))}
           </div>
           <div>
-            <ShopMapBlock cityData={CitiesData[actvieStyle]} />
+            <ShopMapBlock cityData={CitiesData[actvieStyle] ?? CitiesData[0]} />
           </div>
         </div>
       </div>

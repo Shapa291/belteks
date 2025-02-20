@@ -1,5 +1,3 @@
-import { animate } from "motion/react";
-
 export const motionConfig = {
   fadeInUp: {
     initial: { opacity: 0, y: 100 },
@@ -44,7 +42,7 @@ export const motionConfig = {
     animate: { opacity: 1 },
     transition: { duration: 1 },
   },
-  slideInLeftWithDelay: (index) => ({
+  slideInLeftWithDelay: (index: number) => ({
     initial: { opacity: 0, x: -100 },
     animate: { opacity: 1, x: 0 },
     transition: {

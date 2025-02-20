@@ -3,7 +3,6 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
-import Link from "next/link";
 import NavBread from "../components/NavBread/NavBread";
 import { motionConfig } from "@/lib/motionConfig";
 
@@ -17,10 +16,10 @@ function RasshifrovkaAbbreviatur() {
 
         <div className="mt-30">
           <motion.div {...motionConfig.slideInLeft}>
-            <h1 className="fw-700 fs-40 mb-15">
+            <h1 className="fw-700 fs-h1 mb-15">
               Буквенные обозначения отделок бытовых тканей:
             </h1>
-            <div className="fs-24 mb-30">
+            <div className="fs-text mb-30">
               М — механическое умягчение;
               <br />
               Х — химическое умягчение;
@@ -66,10 +65,10 @@ function RasshifrovkaAbbreviatur() {
             </div>
           </motion.div>
           <motion.div {...motionConfig.slideInLeft}>
-            <h1 className="fw-700 fs-40 mb-15">
+            <h1 className="fw-700 fs-h1 mb-15">
               Буквенные обозначения упаковок в готовых изделиях:
             </h1>
-            <div className="fs-24 mb-30">
+            <div className="fs-text mb-30">
               уп. — упаковка ПВХ;
               <br />
               с.уп. — пакет из СПП;
