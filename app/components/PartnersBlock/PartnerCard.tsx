@@ -4,6 +4,7 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import { motionConfig } from "@/lib/motionConfig";
+import Image from "next/image";
 
 interface PartnerCardProps {
   img: string;
@@ -18,7 +19,7 @@ function PartnerCard({ img, text, partnerRef }: PartnerCardProps) {
       className="partner-card mb-15 fw-400 fs-20"
     >
       <a className="pointer" href={partnerRef}>
-        <img src={img} />
+        <Image alt="Логотип партнёра" height={1000} width={1000} src={img} />
       </a>
       <div className="text_for-partners">{text}</div>
     </motion.div>

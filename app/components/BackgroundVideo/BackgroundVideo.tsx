@@ -15,7 +15,7 @@ function BackgroundVideo() {
         muted
         playsInline
       >
-        <source src="../../video/video.MOV" type="video/mp4" />
+        <source src="../../video/videoo.mp4" type="video/mp4" />
         Ваш браузер не поддерживает видео тег.
       </motion.video>
       <div className="video-text">

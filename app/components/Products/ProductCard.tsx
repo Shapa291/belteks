@@ -26,7 +26,7 @@ function ProductCard({ text, imgPtah }: ProductCardProps) {
           src={imgPtah}
           alt="Фон карточки"
           layout="fill" 
-          objectFit="cover" 
+          style={{ objectFit: "cover" }} 
           quality={100}
         />
         <div className="content">

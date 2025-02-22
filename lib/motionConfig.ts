@@ -1,5 +1,3 @@
-import { animate } from "motion/react";
-
 export const motionConfig = {
   fadeInUp: {
     initial: { opacity: 0, y: 100 },
