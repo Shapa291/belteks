@@ -25,10 +25,10 @@
     padding-bottom: 40px;
   }
 
-  .pointer {
+  .logo-footer {
     width: 40%;
     height: auto;
-    /* object-fit: contain; */
+    /* object-fit: contain;  */
   }
 
   /* div h1 {
@@ -81,7 +81,7 @@
       .phonenumber-group {
         display: flex;
         /* flex-direction: row; */
-        justify-content: space-around;
+
         align-items: center;
 
         margin-bottom: 10px;

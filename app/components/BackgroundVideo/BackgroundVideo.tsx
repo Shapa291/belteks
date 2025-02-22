@@ -3,13 +3,13 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 function BackgroundVideo() {
   return (
-    <div className="video-background">
-      <motion.video
-        {...motionConfig.fadeInSoft}
+    <motion.div   {...motionConfig.fadeInSoft}  className="video-background">
+      <video
+     
         autoPlay
         loop
         muted
@@ -17,7 +17,7 @@ function BackgroundVideo() {
       >
         <source src="../../video/videoo.mp4" type="video/mp4" />
         Ваш браузер не поддерживает видео тег.
-      </motion.video>
+      </video>
       <div className="video-text">
         <motion.h1 {...motionConfig.scaleFadeIn("up")} className="fw-400 logo">
           <span className="fw-800">БЕЛ</span>ТЕКС
@@ -35,7 +35,7 @@ function BackgroundVideo() {
           Традиции и стиль
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

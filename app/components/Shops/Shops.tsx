@@ -5,7 +5,7 @@ import "./styles.css";
 import ShopElement from "./ShopElement";
 import { motion } from "motion/react";
 import { ShopsData } from "@/lib/data";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 function Shops() {
   return (

@@ -2,12 +2,20 @@
 
 import React from "react";
 import "./styles.css";
-import FactCard from "./FactCard";
 import { motion } from "motion/react";
 import { AboutBlockData } from "@/lib/data";
-import { motionConfig } from "@/lib/motionConfig";
+import dynamic from "next/dynamic";
+import { motionConfig } from "@/lib/utils";
+
+const FactCard = dynamic(() => import("./FactCard"), { ssr: false });
 
 const AboutBlock = () => {
+  const factCards = React.useMemo(() => {
+    return AboutBlockData.map((el, index) => (
+      <FactCard key={index} year={el.year} text={el.text} />
+    ));
+  }, []);
+
   return (
     <div className="about-block">
       <div className="main-container about-block-grid">
@@ -21,9 +29,10 @@ const AboutBlock = () => {
             промышленности для оптовой и розничной торговли.
           </motion.div>
           <div className="fact-cards">
-            {AboutBlockData.map((el, index) => (
+            {factCards}
+            {/* {AboutBlockData.map((el, index) => (
               <FactCard key={index} year={el.year} text={el.text} />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

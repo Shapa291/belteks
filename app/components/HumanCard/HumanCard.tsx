@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 interface HumanCardProps {
   job: string;

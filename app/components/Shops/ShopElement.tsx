@@ -4,7 +4,7 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 interface ShopElementProps {
   cityName: string;
@@ -12,16 +12,16 @@ interface ShopElementProps {
 
 function ShopElement({ cityName }: ShopElementProps) {
   return (
-    <motion.div
-      {...motionConfig.fadeInUp}
-      className="city-in-list fw-600 dark-green-text"
-    >
-      <Link href="/shops">
+    <Link href="/shops">
+      <motion.div
+        {...motionConfig.fadeInUp}
+        className="city-in-list fw-600 dark-green-text"
+      >
         <div>
-          <span className="city">{cityName}</span>
+          <span className="city fs-h1">{cityName}</span>{" "}
         </div>
-      </Link>
-    </motion.div>
+      </motion.div>
+    </Link>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 interface ShopContactProps {
   index: number;
@@ -25,7 +25,12 @@ function ShopContact({ index, name, addres, number, email }: ShopContactProps) {
           {number}
         </a>
       </div>
-      <div className="fs-116 fw-400">email: {email}</div>
+      <div className="fs-116 fw-400">
+        email:{" "}
+        <a className="pointer" href={`email:${email}`}>
+          {email}
+        </a>
+      </div>
     </motion.div>
   );
 }

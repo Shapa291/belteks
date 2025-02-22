@@ -3,7 +3,7 @@ import "./styles.css";
 import ShopContact from "./ShopContact";
 import { motion } from "motion/react";
 import { contactData } from "@/lib/data";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 interface ContactsModalProps {
   status: boolean;

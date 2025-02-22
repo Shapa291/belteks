@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import PartnerCard from "../components/PartnersBlock/PartnerCard";
 import NavBread from "../components/NavBread/NavBread";
 import { PartnersData } from "@/lib/data";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 function AboutPage() {
   return (

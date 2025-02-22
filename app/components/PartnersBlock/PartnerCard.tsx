@@ -3,7 +3,7 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 import Image from "next/image";
 
 interface PartnerCardProps {
@@ -15,7 +15,7 @@ interface PartnerCardProps {
 function PartnerCard({ img, text, partnerRef }: PartnerCardProps) {
   return (
     <motion.div
-      {...motionConfig.fadeInUp}
+      {...motionConfig.fadeInUpWhileInView}
       className="partner-card mb-15 fw-400 fs-20"
     >
       <a className="pointer" href={partnerRef}>

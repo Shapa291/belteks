@@ -4,7 +4,7 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 import { footerData } from "@/lib/data";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -19,9 +19,9 @@ function Footer() {
           <div className="belteleks-logo">
             <Image
               width={1000}
-              height={3000}
+              height={1000}
               alt="Логотип БелТекс"
-              className="pointer"
+              className="logo-footer pointer"
               src="/imgs/logo.png"
               onClick={() => router.push("/")}
             />
@@ -110,7 +110,7 @@ function Footer() {
                 </a>
               </div>
               <div className="email fs-for-footer-li-email fw-600">
-                Email: {footerData.email}
+                Email: <a className="pointer" href={`email:${footerData.email}`}>{footerData.email}</a>
               </div>
             </div>
             <div className="phonenumber-group"></div>

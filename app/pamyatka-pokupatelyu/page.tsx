@@ -5,7 +5,7 @@ import "./styles.css";
 
 import { motion } from "motion/react";
 import NavBread from "../components/NavBread/NavBread";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 function PamyatkPokupatelyu() {
   return (
@@ -35,7 +35,7 @@ function PamyatkPokupatelyu() {
           </motion.h1>
 
           <div className="fs-text">
-            <motion.p {...motionConfig.fadeIn}>
+            <motion.div {...motionConfig.fadeIn}>
               Уважаемый покупатель!
               <br />
               <br />
@@ -113,9 +113,9 @@ function PamyatkPokupatelyu() {
                 14. Запрещается контакт льняных изделий с химически-активными
                 веществами в бытовых условиях.
               </li>
-            </motion.p>
+            </motion.div>
             <br />
-            <motion.p {...motionConfig.fadeIn}>
+            <motion.div {...motionConfig.fadeIn}>
               <div className="fw-700 fs-h1-name">
                 <i>
                   <u>Специальные предупреждения:</u>
@@ -139,9 +139,9 @@ function PamyatkPokupatelyu() {
                 4. В изделиях с применением регенерированного волокна
                 допускается вкрапление цветных волокон по всему фону.
               </li>
-            </motion.p>
+            </motion.div>
             <br />
-            <motion.p {...motionConfig.fadeIn}>
+            <motion.div {...motionConfig.fadeIn}>
               <div>
                 <b>При несоблюдении наших рекомендаций, а также при:</b>
               </div>
@@ -178,7 +178,7 @@ function PamyatkPokupatelyu() {
               <div>
                 <b>ПРЕТЕНЗИИ ПО КАЧЕСТВУ ПРИНИМАТЬСЯ НЕ БУДУТ!!!</b>
               </div>
-            </motion.p>
+            </motion.div>
             <br />
             <br />
 
@@ -190,7 +190,7 @@ function PamyatkPokupatelyu() {
               продукции.
             </motion.h1>
             <div>
-              <motion.p {...motionConfig.fadeIn}>
+              <motion.div {...motionConfig.fadeIn}>
                 Искусство прядения нитей из льна известно не одну тысячу лет, и
                 до сих пор льняные ткани не теряют своей актуальности в быту,
                 моде, на производстве. Уникальные свойства льняных волокон
@@ -213,10 +213,10 @@ function PamyatkPokupatelyu() {
                 заболевания. Кухонные льняные полотенца по этой причине не
                 становятся “бактериальной бомбой”. Аналогичный эффект получает
                 все ваше тело во время сна на постельном белье из льна.
-              </motion.p>
+              </motion.div>
               <br />
               <br />
-              <motion.p {...motionConfig.fadeIn}>
+              <motion.div {...motionConfig.fadeIn}>
                 Неокрашенные льняные ткани гипоаллергенны. Известны случаи
                 аллергии на синтетические ткани, шерсть, шелк, а на лен ― не
                 зафиксированы. Кроме того, при выращивании лен намного меньше
@@ -246,7 +246,7 @@ function PamyatkPokupatelyu() {
                 минимальная электризуемость обеспечивает чистоту ткани: она
                 меньше и медленнее пачкается, не собирает на себе волокна
                 другого цвета и пыль.
-              </motion.p>
+              </motion.div>
             </div>
             <br />
             <br />
@@ -257,7 +257,7 @@ function PamyatkPokupatelyu() {
               Как использовать полезные свойства льна по максимуму?
             </motion.h1>
             <div className="mb-30">
-              <motion.p {...motionConfig.fadeIn}>
+              <motion.div {...motionConfig.fadeIn}>
                 Носить льняную одежду. В летнюю жару льняные платья и рубашки ―
                 настоящая находка. Лен хорошо отводит влагу и тепло, поэтому по
                 ощущениям температура тела в льняной одежде ниже на 4–5 °С, чем
@@ -275,8 +275,8 @@ function PamyatkPokupatelyu() {
                 пролежней, увеличивают рост свежего эпителия.
                 <br />
                 <br />
-              </motion.p>
-              <motion.p {...motionConfig.fadeIn}>
+              </motion.div>
+              <motion.div {...motionConfig.fadeIn}>
                 Вешать льняные занавески. Помимо экологической чистоты интерьера
                 занавески из небеленого льна помогут создать в доме стильный
                 декор, будут мягко рассеивать свет, не будут электризоваться. Вы
@@ -291,7 +291,7 @@ function PamyatkPokupatelyu() {
                 Включите изделия из льна в свой гардероб, поселите их в своей
                 спальне, и вы не пожалеете о своем выборе. Ведь нет ничего
                 дороже вашего отличного самочувствия и здоровья ваших родных.
-              </motion.p>
+              </motion.div>
             </div>
           </div>
         </div>

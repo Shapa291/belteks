@@ -51,7 +51,10 @@ function Shops() {
           <a className="pointer" href="tel:+375172702394">
             +375 (17) 270-23-94
           </a>
-          <br /> e-mail: info@belteks.by
+          <br /> e-mail:{" "}
+          <a className="pointer" href={`email:$info@belteks.by`}>
+            info@belteks.by
+          </a>
         </motion.div>
         <div className="shops-list">
           <div className="name-of-cities">

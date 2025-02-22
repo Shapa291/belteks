@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 import { footerData } from "@/lib/data";
 interface CityData {
   city: string;
@@ -40,18 +40,18 @@ function ShopMapBlock(props: ShopMapBlockProps) {
           <div className="mb-10">
             <div>
               Приемная:
-              <a href={`tel:${props.cityData.data.phoneNumber.dir}`}>
+              <a  className="pointer" href={`tel:${props.cityData.data.phoneNumber.dir}`}>
                 {props.cityData.data.phoneNumber.dir}
               </a>
             </div>
             <div>
               Торговый отдел:{" "}
-              <a href={`tel:${props.cityData.data.phoneNumber.sales}`}>
+              <a className="pointer" href={`tel:${props.cityData.data.phoneNumber.sales}`}>
                 {props.cityData.data.phoneNumber.sales}
               </a>
             </div>
           </div>
-          <div className="mb-10">email: {props.cityData.data.email}</div>
+          <div className="mb-10">email: <a className="pointer" href={`email:${props.cityData.data.email}`}>{props.cityData.data.email}</a></div>
           <div className="mb-10">
             График работы: {footerData.timeOfWork.fullDay} <br />{" "}
             {footerData.timeOfWork.shortDay}

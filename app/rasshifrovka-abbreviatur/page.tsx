@@ -4,7 +4,7 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import NavBread from "../components/NavBread/NavBread";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 function RasshifrovkaAbbreviatur() {
   return (

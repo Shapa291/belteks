@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { motionConfig } from "@/lib/motionConfig";
+import { motionConfig } from "@/lib/utils";
 
 interface NavBreadProps {
   name: string;

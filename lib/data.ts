@@ -338,8 +338,8 @@ export const PartnersData = [
 export const footerData = {
   email: "commerce@belteks.by",
   numbers: {
-    sales: "+375 (17) 1234567",
-    dir: "+375 (17) 1234567",
+    sales: "+375 (25) 5002945",
+    dir: "+375 (17) 2702553",
   },
   timeOfWork: {
     fullDay: "С 8:45 до 17:30 по будням",

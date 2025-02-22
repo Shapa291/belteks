@@ -228,15 +228,15 @@ body {
 }
 
 @media (max-width: 1440px) {
-  
+
   .fs-for-footer-li-element {
     font-size: 14px;
   }
-  
+
   .fs-for-footer-li-phone {
     font-size: 16px;
   }
-  
+
   .fs-for-footer-li-email {
     font-size: 14px;
   }
@@ -273,11 +273,11 @@ body {
   .fs-for-footer-li-element {
     font-size: 14px;
   }
-  
+
   .fs-for-footer-li-phone {
     font-size: 16px;
   }
-  
+
   .fs-for-footer-li-email {
     font-size: 14px;
   }
@@ -309,11 +309,11 @@ body {
   .fs-for-footer-li-element {
     font-size: 8px;
   }
-  
+
   .fs-for-footer-li-phone {
     font-size: 11px;
   }
-  
+
   .fs-for-footer-li-email {
     font-size: 10px;
   }
@@ -349,11 +349,11 @@ body {
   .fs-for-footer-li-element {
     font-size: 6px;
   }
-  
+
   .fs-for-footer-li-phone {
     font-size: 9px;
   }
-  
+
   .fs-for-footer-li-email {
     font-size: 8px;
   }
@@ -368,7 +368,7 @@ body {
   }
 
   .fs-h1 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .fs-h2 {
@@ -380,7 +380,7 @@ body {
   }
 
   .fs-nav-bread {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
@@ -388,11 +388,11 @@ body {
   .fs-for-footer-li-element {
     font-size: 8px;
   }
-  
+
   .fs-for-footer-li-phone {
     font-size: 6px;
   }
-  
+
   .fs-for-footer-li-email {
     font-size: 5px;
   }
@@ -404,15 +404,15 @@ body {
   }
 
   .fs-text {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .fs-h1 {
-    font-size: 12px;
+    font-size: 21px;
   }
 
   .fs-h1-name {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .fs-h2 {
@@ -420,6 +420,6 @@ body {
   }
 
   .fs-nav-bread {
-    font-size: 7px;
+    font-size: 8px;
   }
 }
