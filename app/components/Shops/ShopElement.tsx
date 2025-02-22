@@ -18,7 +18,7 @@ function ShopElement({ cityName }: ShopElementProps) {
         className="city-in-list fw-600 dark-green-text"
       >
         <div>
-          <span className="city fs-h1">{cityName}</span>{" "}
+          <span className="city fs-h1-name">{cityName}</span>{" "}
         </div>
       </motion.div>
     </Link>

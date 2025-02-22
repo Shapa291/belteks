@@ -19,14 +19,12 @@ function ProductCard({ text, imgPtah }: ProductCardProps) {
       viewport={{ once: true }}
       className="product-card fs-30 fw-700"
     >
-      <div
-        className="card"
-      >
+      <div className="card">
         <Image
           src={imgPtah}
           alt="Фон карточки"
-          layout="fill" 
-           style={{ objectFit: "cover" }} 
+          layout="fill"
+          style={{ objectFit: "cover" }}
           quality={100}
         />
         <div className="content">

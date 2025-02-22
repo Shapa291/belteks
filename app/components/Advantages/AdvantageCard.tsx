@@ -16,8 +16,7 @@ function AdvantageCard({ icon, text }: AdvantageCardProps) {
     <motion.div {...motionConfig.fadeInUp} className="advantage-card">
       <div className="content">
         <div className="advantage-icon">
-          <Image src={icon} alt="логотип" height={100} width={100}/>
-
+          <Image src={icon} alt="логотип" height={100} width={100} />
         </div>
         <div className="advantage-text fw-700">{text}</div>
       </div>

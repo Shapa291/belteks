@@ -28,12 +28,7 @@ const AboutBlock = () => {
             поставщиком ведущих белорусских производителей легкой и текстильной
             промышленности для оптовой и розничной торговли.
           </motion.div>
-          <div className="fact-cards">
-            {factCards}
-            {/* {AboutBlockData.map((el, index) => (
-              <FactCard key={index} year={el.year} text={el.text} />
-            ))} */}
-          </div>
+          <div className="fact-cards">{factCards}</div>
         </div>
       </div>
     </div>

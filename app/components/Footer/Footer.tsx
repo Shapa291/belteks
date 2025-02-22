@@ -90,7 +90,7 @@ function Footer() {
                 />
                 <a
                   href={`tel:${footerData.numbers.dir}`}
-                  className="first-number fs-for-footer-li-phone fw-600"
+                  className="first-number fs-for-footer-li-phone fw-600 pointer"
                 >
                   {footerData.numbers.dir}
                 </a>
@@ -104,13 +104,16 @@ function Footer() {
                 />
                 <a
                   href={`tel:${footerData.numbers.sales}`}
-                  className="second-number fs-for-footer-li-phone fw-600"
+                  className="second-number fs-for-footer-li-phone fw-600 pointer"
                 >
                   {footerData.numbers.sales}
                 </a>
               </div>
               <div className="email fs-for-footer-li-email fw-600">
-                Email: <a className="pointer" href={`email:${footerData.email}`}>{footerData.email}</a>
+                Email:{" "}
+                <a className="pointer" href={`mailto:${footerData.email}`}>
+                  {footerData.email}
+                </a>
               </div>
             </div>
             <div className="phonenumber-group"></div>

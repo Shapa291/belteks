@@ -26,8 +26,8 @@ function ShopContact({ index, name, addres, number, email }: ShopContactProps) {
         </a>
       </div>
       <div className="fs-116 fw-400">
-        email:{" "}
-        <a className="pointer" href={`email:${email}`}>
+        email:
+        <a className="pointer" href={`mailto:${email}`}>
           {email}
         </a>
       </div>

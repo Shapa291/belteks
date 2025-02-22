@@ -7,11 +7,13 @@ import Footer from "./components/Footer/Footer";
 const geistYsabeau = Ysabeau({
   variable: "--font-geist-ysabeau",
   subsets: ["latin"],
+  display: "swap"
 });
 
 const geistMontserrat = Montserrat({
   variable: "--font-geist-montserrat",
   subsets: ["latin"],
+    display: "swap"
 });
 
 export const metadata: Metadata = {

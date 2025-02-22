@@ -42,11 +42,11 @@
         font-size: 20px;
         font-weight: 700;
 
-        .back-btn:hover{
+        .back-btn:hover {
 
-             
-                border-bottom: #02444b solid 1px;
-          
+
+            border-bottom: #02444b solid 1px;
+
         }
     }
 }

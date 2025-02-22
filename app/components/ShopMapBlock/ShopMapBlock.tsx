@@ -51,7 +51,7 @@ function ShopMapBlock(props: ShopMapBlockProps) {
               </a>
             </div>
           </div>
-          <div className="mb-10">email: <a className="pointer" href={`email:${props.cityData.data.email}`}>{props.cityData.data.email}</a></div>
+          <div className="mb-10">email: <a className="pointer" href={`mailto:${props.cityData.data.email}`}>{props.cityData.data.email}</a></div>
           <div className="mb-10">
             График работы: {footerData.timeOfWork.fullDay} <br />{" "}
             {footerData.timeOfWork.shortDay}

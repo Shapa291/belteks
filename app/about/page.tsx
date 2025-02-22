@@ -13,7 +13,6 @@ function AboutPage() {
     <div>
       <div className="dark-green-text main-container about-page">
         <div className="wrapper"></div>
-        {/* Навигационна надпись */}
         <NavBread name="О компании" />
         <div className="about-content">
           <motion.h1
@@ -41,7 +40,7 @@ function AboutPage() {
             <br />
             На территории предприятия открыт магазин-склад по оптовой продаже
             товаров юридическим лицам, их обособленным подразделениям и
-            индивидуальным предпринимателям за наличный расчет{" "}
+            индивидуальным предпринимателям за наличный расчет &nbsp;
             <span className="fw-700">
               (ТОЛЬКО ДЛЯ РЕЗИДЕНТОВ РЕСПУБЛИКИ БЕЛАРУСЬ)
             </span>
