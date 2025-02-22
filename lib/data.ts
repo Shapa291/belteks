@@ -103,11 +103,11 @@ export const ShopsData = [
 ];
 
 export const ProductsData = [
-  { img: "./imgs/ProductsIMG/1.png", name: "ПОСТЕЛЬНОЕ БЕЛЬЕ" },
-  { img: "./imgs/ProductsIMG/4.png", name: "ТКАНИ" },
-  { img: "./imgs/ProductsIMG/5.png", name: "ОДЕЯЛА, ПЛЕДЫ, ПОДУШКИ" },
-  { img: "./imgs/ProductsIMG/2.png", name: "МАХРОВЫЕ ИЗДЕЛИЯ" },
-  { img: "./imgs/ProductsIMG/3.png", name: "СОПУТСВТУЮЩИЕ ТОВАРЫ" },
+  { img: "/imgs/ProductsIMG/1.png", name: "ПОСТЕЛЬНОЕ БЕЛЬЕ" },
+  { img: "/imgs/ProductsIMG/4.png", name: "ТКАНИ" },
+  { img: "/imgs/ProductsIMG/5.png", name: "ОДЕЯЛА, ПЛЕДЫ, ПОДУШКИ" },
+  { img: "/imgs/ProductsIMG/2.png", name: "МАХРОВЫЕ ИЗДЕЛИЯ" },
+  { img: "/imgs/ProductsIMG/3.png", name: "СОПУТСВТУЮЩИЕ ТОВАРЫ" },
 ];
 
 export const contactData = [
@@ -150,19 +150,19 @@ export const contactData = [
 ];
 
 export const AdvantagesData = [
-  { icon: "./imgs/AdvantagesIMG/cup.png", text: "Опыт и профессионализм" },
-  { icon: "./imgs/AdvantagesIMG/coins.png", text: "Цены от производителя" },
+  { icon: "/imgs/AdvantagesIMG/cup.png", text: "Опыт и профессионализм" },
+  { icon: "/imgs/AdvantagesIMG/coins.png", text: "Цены от производителя" },
   {
-    icon: "./imgs/AdvantagesIMG/quality.png",
+    icon: "/imgs/AdvantagesIMG/quality.png",
     text: "Качество и безопастность",
   },
   {
-    icon: "./imgs/AdvantagesIMG/person.png",
+    icon: "/imgs/AdvantagesIMG/person.png",
     text: "Индивидуальный подход к каждому покупателю",
   },
-  { icon: "./imgs/AdvantagesIMG/satisfaction.png", text: "Гарантии" },
+  { icon: "/imgs/AdvantagesIMG/satisfaction.png", text: "Гарантии" },
   {
-    icon: "./imgs/AdvantagesIMG/fabric.png",
+    icon: "/imgs/AdvantagesIMG/fabric.png",
     text: "Широкий выбор ассортимента",
   },
 ];

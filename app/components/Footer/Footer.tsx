@@ -6,21 +6,34 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { motionConfig } from "@/lib/motionConfig";
 import { footerData } from "@/lib/data";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function Footer() {
+  const router = useRouter();
+
   return (
     <div className="footer mt-30">
       <div className="main-container">
         <motion.div {...motionConfig.fadeInUp}>
-          <Link className="belteleks-logo" href="/">
-            <img className="pointer" src="./imgs/logo.png" />
-          </Link>
+          <div className="belteleks-logo">
+            <Image
+              width={1000}
+              height={3000}
+              alt="Логотип БелТекс"
+              className="pointer"
+              src="/imgs/logo.png"
+              onClick={() => router.push("/")}
+            />
+          </div>
         </motion.div>
 
         <motion.div {...motionConfig.fadeInUp} className="footer-columns">
           <div className="footer-menu fs-for-footer-li-element">
             <div className="footer-menu-list fw-400">
-              <h1 className=" fw-700 fs-for-footer-li-element mb-15">О КОМПАНИИ</h1>
+              <h1 className=" fw-700 fs-for-footer-li-element mb-15">
+                О КОМПАНИИ
+              </h1>
               <li>
                 <Link href="/about">
                   <span>О нас</span>
@@ -38,7 +51,9 @@ function Footer() {
               </li>
             </div>
             <div className="footer-menu-list">
-              <h1 className="fs-for-footer-li-element  fw-700 mb-15">ИНФОРМАЦИЯ</h1>
+              <h1 className="fs-for-footer-li-element  fw-700 mb-15">
+                ИНФОРМАЦИЯ
+              </h1>
               {/* <li>
                 <Link href="/news">
                   <span>Акционерам</span>
@@ -67,7 +82,12 @@ function Footer() {
           <div className="footer-menu-contacts">
             <div>
               <div className="phonenumber-group">
-                <img className="icon" src="./imgs/phone.png" />
+                <Image
+                  alt="Логотип"
+                  src="/imgs/phone.png"
+                  width={19.5}
+                  height={18.42}
+                />
                 <a
                   href={`tel:${footerData.numbers.dir}`}
                   className="first-number fs-for-footer-li-phone fw-600"
@@ -76,7 +96,12 @@ function Footer() {
                 </a>
               </div>
               <div className="phonenumber-group">
-                <img className="icon" src="./imgs/phone.png" />
+                <Image
+                  alt="Логотип"
+                  src="/imgs/phone.png"
+                  width={19.5}
+                  height={18.42}
+                />
                 <a
                   href={`tel:${footerData.numbers.sales}`}
                   className="second-number fs-for-footer-li-phone fw-600"

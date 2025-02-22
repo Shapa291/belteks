@@ -12,11 +12,11 @@
     position: relative;
 }
 
+
 .card::before {
     content: "";
     position: absolute;
     inset: 0;
-
 }
 
 .content {

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 interface ProductCardProps {
   text: string;
@@ -20,10 +21,14 @@ function ProductCard({ text, imgPtah }: ProductCardProps) {
     >
       <div
         className="card"
-        style={{
-          backgroundImage: `url(${imgPtah})`,
-        }}
       >
+        <Image
+          src={imgPtah}
+          alt="Фон карточки"
+          layout="fill" 
+          objectFit="cover" 
+          quality={100}
+        />
         <div className="content">
           <div className="product-card-text">{text}</div>
         </div>
