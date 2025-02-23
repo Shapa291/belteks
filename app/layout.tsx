@@ -7,18 +7,19 @@ import Footer from "./components/Footer/Footer";
 const geistYsabeau = Ysabeau({
   variable: "--font-geist-ysabeau",
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 
 const geistMontserrat = Montserrat({
   variable: "--font-geist-montserrat",
   subsets: ["latin"],
-    display: "swap"
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "БелТекс",
   description: "Белорусский Текстиль",
+  icons: "./imgs/fav_logo.png"
 };
 
 export default function RootLayout({
