@@ -211,7 +211,7 @@ export const CitiesData: CityData[] = [
       adress: "224701, г. Брест, ул. Фомина, 15а",
       phoneNumber: {
         dir: "+375 (16) 223-73-85",
-        sales: "",
+        sales: "+375 (16) 223-73-85",
       },
       email: "brest@belteks.by",
       mapLinks: {
@@ -230,8 +230,8 @@ export const CitiesData: CityData[] = [
       name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №2",
       adress: "210516, г. Витебск, ул. Лазо 117",
       phoneNumber: {
-        dir: "+375 (212) 23-42-30",
-        sales: "",
+        dir: "+375 (212) 67-89-51",
+        sales: "+375 (212) 23-42-30",
       },
       email: "vitebsk@belteks.by",
       mapLinks: {
@@ -252,8 +252,8 @@ export const CitiesData: CityData[] = [
       name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №3»",
       adress: "246007, г. Гомель, ул. Шилова 12",
       phoneNumber: {
-        dir: "+375 (232) 34-60-16",
-        sales: "",
+        dir: "+375 (232) 34-61-57",
+        sales: "+375 (232) 34-60-16",
       },
       email: "gomel@belteks.by",
       mapLinks: {
@@ -275,7 +275,7 @@ export const CitiesData: CityData[] = [
       adress: "230005, г. Гродно, ул.Дзержинского, 94а",
       phoneNumber: {
         dir: "+375 (152) 55-42-04",
-        sales: "",
+        sales: "+375 (29) 869-52-53",
       },
       email: "grodno@belteks.by",
       mapLinks: {
@@ -294,8 +294,8 @@ export const CitiesData: CityData[] = [
       name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №4",
       adress: "212008, г. Могилев, пер. Мечникова 4-й 15/1Б",
       phoneNumber: {
-        dir: "+375 (222) 73-53-45",
-        sales: "",
+        dir: "+375 (222) 73-38-85",
+        sales: "+375 (222) 73-53-45",
       },
       email: "mogilev@belteks.by",
       mapLinks: {
