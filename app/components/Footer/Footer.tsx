@@ -54,11 +54,11 @@ function Footer() {
               <h1 className="fs-for-footer-li-element  fw-700 mb-15">
                 ИНФОРМАЦИЯ
               </h1>
-              {/* <li>
+               <li>
                 <Link href="/news">
                   <span>Акционерам</span>
                 </Link>
-              </li> */}
+              </li> 
               <li>
                 <a className="pointer" href="https://president.gov.by/ru">
                   Сайт президента Республики Беларусь

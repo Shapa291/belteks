@@ -44,19 +44,19 @@ export const peopleContacts = [
     email: "dir@belteks.by",
   },
   {
-    job: "Заместитель Директора",
+    job: "Заместитель директора",
     name: "Крайко Тамара  Владимировна",
     phoneNumber: "+375 (17) 270-23-94",
     email: "zam.dir@belteks.by",
   },
   {
-    job: "Приемная Директора",
-    name: "Белая Юлия Генадьевна",
+    job: "Приемная директора",
+    name: "Белая Юлия Геннадьевна",
     phoneNumber: "+375 (17) 270-25-53",
     email: "info@belteks.by",
   },
   {
-    job: "Главный Бухгалтер",
+    job: "Главный бухгалтер",
     name: "Андрианова Наталья Анатольевна",
     phoneNumber: "+375 (17) 392-01-11",
     email: "buh@belteks.by",
@@ -88,14 +88,14 @@ export const peopleContacts = [
   {
     job: "Технический отдел",
     name: "",
-    phoneNumber: "+375 (29) 222-22-33",
+    phoneNumber: "+375 (17) 270-32-72",
     email: "dev@belteks.by",
   },
 ];
 
 export const ShopsData = [
   "МИНСК И МИНСКАЯ ОБЛАСТЬ",
-  "БРЕСТКАЯ ОБЛАСТЬ",
+  "БРЕСТСКАЯ ОБЛАСТЬ",
   "ВИТЕБСКАЯ ОБЛАСТЬ",
   "ГОМЕЛЬСКАЯ ОБЛАСТЬ",
   "ГРОДНЕНСКАЯ ОБЛАСТЬ",
@@ -107,7 +107,7 @@ export const ProductsData = [
   { img: "/imgs/ProductsIMG/4.png", name: "ТКАНИ" },
   { img: "/imgs/ProductsIMG/5.png", name: "ОДЕЯЛА, ПЛЕДЫ, ПОДУШКИ" },
   { img: "/imgs/ProductsIMG/2.png", name: "МАХРОВЫЕ ИЗДЕЛИЯ" },
-  { img: "/imgs/ProductsIMG/3.png", name: "СОПУТСВТУЮЩИЕ ТОВАРЫ" },
+  { img: "/imgs/ProductsIMG/3.png", name: "СОПУТСТВУЮЩИЕ ТОВАРЫ" },
 ];
 
 export const contactData = [
@@ -118,31 +118,31 @@ export const contactData = [
     email: "info@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №2",
+    name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №2",
     addres: "210516, г. Витебск, ул. Лазо 117",
     number: "+375 (212) 23-42-30",
     email: "vitebsk@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №3»",
+    name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №3",
     addres: "246007, г. Гомель, ул. Шилова 12",
     number: "+375 (232) 34-60-16",
     email: "gomel@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №4»",
+    name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №4",
     addres: "212008, г. Могилев, пер. Мечникова 4-й 15/1Б",
     number: "+375 (222) 73-53-45",
     email: "mogilev@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №5",
+    name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №5",
     addres: "224701, г. Брест, ул. Фомина, 15а",
     number: "+375 (16) 223-73-85",
     email: "brest@belteks.by",
   },
   {
-    name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №6",
+    name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №6",
     addres: "230005, г. Гродно, ул.Дзержинского, 94а",
     number: "+375 (152) 55-42-04",
     email: "grodno@belteks.by",
@@ -207,7 +207,7 @@ export const CitiesData: CityData[] = [
   {
     city: "Брест",
     data: {
-      name: "ОАО «ОЛЦ БелТекс» Оптово Розничный Склад №5",
+      name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №5",
       adress: "224701, г. Брест, ул. Фомина, 15а",
       phoneNumber: {
         dir: "+375 (16) 223-73-85",
@@ -227,7 +227,7 @@ export const CitiesData: CityData[] = [
   {
     city: "Витебск",
     data: {
-      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №2",
+      name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №2",
       adress: "210516, г. Витебск, ул. Лазо 117",
       phoneNumber: {
         dir: "+375 (212) 23-42-30",
@@ -249,7 +249,7 @@ export const CitiesData: CityData[] = [
   {
     city: "Гомель",
     data: {
-      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №3»",
+      name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №3»",
       adress: "246007, г. Гомель, ул. Шилова 12",
       phoneNumber: {
         dir: "+375 (232) 34-60-16",
@@ -271,7 +271,7 @@ export const CitiesData: CityData[] = [
   {
     city: "Гродно",
     data: {
-      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №6",
+      name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №6",
       adress: "230005, г. Гродно, ул.Дзержинского, 94а",
       phoneNumber: {
         dir: "+375 (152) 55-42-04",
@@ -291,7 +291,7 @@ export const CitiesData: CityData[] = [
   {
     city: "Могилев",
     data: {
-      name: "ОАО «ОЛЦ БелТекс» ОПТОВО-РОЗНИЧНЫЙ СКЛАД №4",
+      name: "ОАО «ОЛЦ БелТекс» оптово-розничный склад №4",
       adress: "212008, г. Могилев, пер. Мечникова 4-й 15/1Б",
       phoneNumber: {
         dir: "+375 (222) 73-53-45",
@@ -338,7 +338,7 @@ export const PartnersData = [
 export const footerData = {
   email: "commerce@belteks.by",
   numbers: {
-    sales: "+375 (25) 5002945",
+    sales: "+375 (44) 7036925",
     dir: "+375 (17) 2702553",
   },
   timeOfWork: {

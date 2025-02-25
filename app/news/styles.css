@@ -3,6 +3,10 @@
     min-height: 80px;
 }
 
-.articles {
-    
+.news-page {
+    position: relative;
+}
+
+.article-header {
+    text-align: center;
 }
